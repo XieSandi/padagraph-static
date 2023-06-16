@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- color of address bar in mobile browser -->
+	<meta name="theme-color" content="#28292C">
+	<!-- favicon  -->
+	<link rel="shortcut icon" href="../img/light/favicon.png" type="image/x-icon">
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="../css/plugins/bootstrap.min.css">
+	<!-- font awesome css -->
+	<link rel="stylesheet" href="../css/plugins/font-awesome.min.css">
+	<!-- swiper css -->
+	<link rel="stylesheet" href="../css/plugins/swiper.min.css">
+	<!-- fancybox css -->
+	<link rel="stylesheet" href="../css/plugins/fancybox.min.css">
+	<!-- mapbox css -->
+	<link href="../css/plugins/mapbox-style.css" rel='stylesheet'>
+	<!-- main css -->
+	<link rel="stylesheet" href="../css/style-light.css">
+
+	<title>Photography</title>
+
+</head>
+
+<body>
+
+	<div class="mry-app">
+
+		<!-- preloader -->
+		<div class="mry-preloader mry-active">
+			<div class="mry-preloader-content">
+				<img class="mry-logo mry-mb-20" src="../img/light/logo.svg" alt="Mireya">
+				<div class="mry-loader-bar">
+					<div class="mry-loader"></div>
+				</div>
+				<div class="mry-label">Please wait</div>
+			</div>
+		</div>
+		<!-- preloader end -->
+
+		<!-- cursor -->
+		<div class="mry-magic-cursor">
+			<div class="mry-ball">
+				<div class="mry-loader">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50"
+						style="enable-background:new 0 0 50 50;" xml:space="preserve">
+						<path d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z">
+							<animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite" />
+						</path>
+					</svg>
+				</div>
+			</div>
+		</div>
+		<!-- cursor end -->
+
+		<!-- top panel -->
+		<div class="mry-top-panel">
+			<div class="mry-logo-frame">
+				<a href="../index.html" class="mry-default-link mry-anima-link">
+					<img class="mry-logo" src="../img/light/logo.svg" alt="Mireya">
+				</a>
+			</div>
+			<div class="mry-menu-button-frame">
+				<div class="mry-label">Menu</div>
+
+				<div class="mry-menu-btn mry-magnetic-link">
+					<div class="mry-burger mry-magnetic-object">
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- top panel end -->
+
+		<!-- menu -->
+		<div class="mry-menu">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-md-4">
+						<nav id="mry-dynamic-menu">
+							<ul>
+								<li class="menu-item current-menu-item"><a href="../index.html" class="mry-default-link">Home</a></li>
+								<li class="menu-item"><a href="../about.html" class="mry-anima-link mry-default-link">About</a></li>
+								<li class="menu-item menu-item-has-children"><a href="#." class="mry-default-link">Works</a>
+									<ul class="sub-menu">
+										<li class="menu-item"><a href="../portfolios/photography.html" class="mry-anima-link mry-default-link">Photography</a></li>
+										<li class="menu-item"><a href="../portfolios/videography.html" class="mry-anima-link mry-default-link">Film & Advertisement</a></li>
+										<li class="menu-item"><a href="../portfolios/visual-design.html" class="mry-anima-link mry-default-link">Visual Design</a></li>
+									</ul>
+								</li>
+								<li class="menu-item"><a href="../contact.html" class="mry-anima-link mry-default-link">Contact</a></li>
+							</ul>
+						</nav>
+
+					</div>
+					<div class="col-md-4">
+						<div class="mry-info-box-frame">
+							<div class="mry-info-box">
+								<div class="mry-mb-20">
+									<div class="mry-label mry-mb-5">Country:</div>
+									<div class="mry-text">Indonesia</div>
+								</div>
+								<div class="mry-mb-20">
+									<div class="mry-label mry-mb-5">City:</div>
+									<div class="mry-text">Bandungs</div>
+								</div>
+								<div class="mry-mb-20">
+									<div class="mry-label mry-mb-5">Email:</div>
+									<a class="mry-text mry-default-link" href="mailto:padagraph.id@gmail.com">padagraph.id@gmail.com</a>
+								</div>
+								<div class="mry-mb-20">
+									<div class="mry-label mry-mb-5">Phone:</div>
+									<a class="mry-text mry-default-link" href="#.">+628888412241</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- menu end -->
+
+		<div  class="transition-fade">
+			<div class="mry-content-frame" id="scroll">
+				<canvas class="mry-dots" style="display: none"></canvas>
+
+				<div class="mry-head-bg">
+					<img src="../img/light/projects/prjct-6/1.jpg" alt="background">
+					<div class="mry-bg-overlay"></div>
+				</div>
+
+				<div class="mry-banner mry-p-140-0">
+					<div class="container">
+						<div class="mry-main-title mry-title-center">
+							<div class="mry-subtitle mry-mb-20 mry-fo">PHOTOGRAPHY</div>
+							<h1 class="mry-mb-20 mry-fo">Explore Our Amazing<br><span class="mry-border-text">Professional Cases</span><span class="mry-animation-el"></span></h1>
+							<div class="mry-text mry-fo">Through a carefully curated blend of creativity and technical expertise, our concept project in photography captures the essence of storytelling, transcending boundaries and immersing viewers in a visual narrative.</div>
+							<div class="mry-scroll-hint-frame">
+								<a class="mry-scroll-hint mry-smooth-scroll mry-magnetic-link mry-fo" href="#mry-anchor">
+									<span class="mry-magnetic-object"></span>
+								</a>
+								<div class="mry-label mry-fo">Scroll Down</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- portfolio -->
+				<div class="mry-portfolio mry-p-100-100">
+					<div class="container">
+
+						<div class="mry-filter mry-mb-40 mry-fo">
+							<a href="#" data-filter="*" class="mry-card-category mry-default-link mry-current">All Categories</a>
+							<a href="#" data-filter=".potrait" class="mry-card-category mry-default-link">Potrait</a>
+							<a href="#" data-filter=".landscape" class="mry-card-category mry-default-link">Landscape</a>
+							<a href="#" data-filter=".product" class="mry-card-category mry-default-link">Product</a>
+							<a href="#" data-filter=".event" class="mry-card-category mry-default-link">Event</a>
+						</div>
+
+						<div class="mry-portfolio-frame">
+							<div class="mry-masonry-grid mry-3-col">
+								<div class="mry-grid-sizer"></div>
+
+								<!-- Product 1 -->
+								<div class="mry-masonry-grid-item mry-masonry-grid-item-33 product">
+									<div class="mry-card-item">
+										<div class="mry-card-cover-frame mry-mb-20 mry-fo">
+											<div class="mry-badge">Product</div>
+											<img src="../img/light/projects/photography/Product/Elskin Beauty/1.webp" alt="project" >
+											<div class="mry-cover-overlay"></div>
+											<div class="mry-hover-links">
+												<a href="../img/light/projects/photography/Product/Elskin Beauty/1.webp" data-fancybox="works" class="mry-zoom mry-magnetic-link"><span class="mry-magnetic-object"><i
+															class="fas fa-expand"></i></span></a>
+												<a href="#" class="mry-more mry-magnetic-link mry-anima-link"><span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span></a>
+											</div>
+										</div>
+										<div class="mry-item-descr mry-fo">
+											<h4 class="mry-mb-10"><a href="#">Elskin Beauty</a></h4>
+											<!-- <div class="mry-text">With elements that symbolize dreams and sleep. Consider bentuk kasur create a whimsical and dream-like atmosphere.
+											</div> -->
+										</div>
+									</div>
+								</div>
+								
+								<!-- Product 2 -->
+								<div class="mry-masonry-grid-item mry-masonry-grid-item-33 product">
+									<div class="mry-card-item">
+										<div class="mry-card-cover-frame mry-mb-20 mry-fo">
+											<div class="mry-badge">Product</div>
+											<img src="../img/light/projects/photography/Product/Macaroni Ambyar/1.webp" alt="project" >
+											<div class="mry-cover-overlay"></div>
+											<div class="mry-hover-links">
+												<a href="../img/light/projects/photography/Product/Macaroni Ambyar/1.webp" data-fancybox="works" class="mry-zoom mry-magnetic-link"><span class="mry-magnetic-object"><i
+															class="fas fa-expand"></i></span></a>
+												<a href="#" class="mry-more mry-magnetic-link mry-anima-link"><span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span></a>
+											</div>
+										</div>
+										<div class="mry-item-descr mry-fo">
+											<h4 class="mry-mb-10"><a href="#">Macaroni Ambyar</a></h4>
+											<!-- <div class="mry-text">With elements that symbolize dreams and sleep. Consider bentuk kasur create a whimsical and dream-like atmosphere.
+											</div> -->
+										</div>
+									</div>
+								</div>
+
+								<!-- Landscape 1 -->
+								<div class="mry-masonry-grid-item mry-masonry-grid-item-33 landscape">
+									<div class="mry-card-item">
+										<div class="mry-card-cover-frame mry-mb-20 mry-fo">
+											<div class="mry-badge">Landscape</div>
+											<img src="../img/light/projects/photography/Landscape/Caffeine Haven/1.webp" alt="project" >
+											<div class="mry-cover-overlay"></div>
+											<div class="mry-hover-links">
+												<a href="../img/light/projects/photography/Landscape/Caffeine Haven/1.webp" data-fancybox="works" class="mry-zoom mry-magnetic-link"><span class="mry-magnetic-object"><i
+															class="fas fa-expand"></i></span></a>
+												<a href="#" class="mry-more mry-magnetic-link mry-anima-link"><span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span></a>
+											</div>
+										</div>
+										<div class="mry-item-descr mry-fo">
+											<h4 class="mry-mb-10"><a href="#">Caffeine Haven</a></h4>
+											<!-- <div class="mry-text">With elements that symbolize dreams and sleep. Consider bentuk kasur create a whimsical and dream-like atmosphere.
+											</div> -->
+										</div>
+									</div>
+								</div>
+
+								<!-- Landscape 2 -->
+								<div class="mry-masonry-grid-item mry-masonry-grid-item-33 landscape">
+									<div class="mry-card-item">
+										<div class="mry-card-cover-frame mry-mb-20 mry-fo">
+											<div class="mry-badge">Landscape</div>
+											<img src="../img/light/projects/photography/Landscape/Celestial Crater/1.webp" alt="project" >
+											<div class="mry-cover-overlay"></div>
+											<div class="mry-hover-links">
+												<a href="../img/light/projects/photography/Landscape/Celestial Crater/1.webp" data-fancybox="works" class="mry-zoom mry-magnetic-link"><span class="mry-magnetic-object"><i
+															class="fas fa-expand"></i></span></a>
+												<a href="#" class="mry-more mry-magnetic-link mry-anima-link"><span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span></a>
+											</div>
+										</div>
+										<div class="mry-item-descr mry-fo">
+											<h4 class="mry-mb-10"><a href="#">Celestial Crater</a></h4>
+											<!-- <div class="mry-text">With elements that symbolize dreams and sleep. Consider bentuk kasur create a whimsical and dream-like atmosphere.
+											</div> -->
+										</div>
+									</div>
+								</div>
+
+								<!-- Landscape 3 -->
+								<div class="mry-masonry-grid-item mry-masonry-grid-item-33 landscape">
+									<div class="mry-card-item">
+										<div class="mry-card-cover-frame mry-mb-20 mry-fo">
+											<div class="mry-badge">Landscape</div>
+											<img src="../img/light/projects/photography/Landscape/Echoes of Heritage/1.webp" alt="project" >
+											<div class="mry-cover-overlay"></div>
+											<div class="mry-hover-links">
+												<a href="../img/light/projects/photography/Landscape/Echoes of Heritage/1.webp" data-fancybox="works" class="mry-zoom mry-magnetic-link"><span class="mry-magnetic-object"><i
+															class="fas fa-expand"></i></span></a>
+												<a href="#" class="mry-more mry-magnetic-link mry-anima-link"><span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span></a>
+											</div>
+										</div>
+										<div class="mry-item-descr mry-fo">
+											<h4 class="mry-mb-10"><a href="#">Echoes of Heritage</a></h4>
+											<!-- <div class="mry-text">With elements that symbolize dreams and sleep. Consider bentuk kasur create a whimsical and dream-like atmosphere.
+											</div> -->
+										</div>
+									</div>
+								</div>
+
+								<!-- Landscape 4 -->
+								<div class="mry-masonry-grid-item mry-masonry-grid-item-33 landscape">
+									<div class="mry-card-item">
+										<div class="mry-card-cover-frame mry-mb-20 mry-fo">
+											<div class="mry-badge">Landscape</div>
+											<img src="../img/light/projects/photography/Landscape/Echoes of Time/1.webp" alt="project" >
+											<div class="mry-cover-overlay"></div>
+											<div class="mry-hover-links">
+												<a href="../img/light/projects/photography/Landscape/Echoes of Time/1.webp" data-fancybox="works" class="mry-zoom mry-magnetic-link"><span class="mry-magnetic-object"><i
+															class="fas fa-expand"></i></span></a>
+												<a href="#" class="mry-more mry-magnetic-link mry-anima-link"><span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span></a>
+											</div>
+										</div>
+										<div class="mry-item-descr mry-fo">
+											<h4 class="mry-mb-10"><a href="#">Echoes of Time</a></h4>
+											<!-- <div class="mry-text">With elements that symbolize dreams and sleep. Consider bentuk kasur create a whimsical and dream-like atmosphere.
+											</div> -->
+										</div>
+									</div>
+								</div>
+
+								<!-- Landscape 5 -->
+								<div class="mry-masonry-grid-item mry-masonry-grid-item-33 landscape">
+									<div class="mry-card-item">
+										<div class="mry-card-cover-frame mry-mb-20 mry-fo">
+											<div class="mry-badge">Landscape</div>
+											<img src="../img/light/projects/photography/Landscape/Golden Horizon/1.webp" alt="project" >
+											<div class="mry-cover-overlay"></div>
+											<div class="mry-hover-links">
+												<a href="../img/light/projects/photography/Landscape/Golden Horizon/1.webp" data-fancybox="works" class="mry-zoom mry-magnetic-link"><span class="mry-magnetic-object"><i
+															class="fas fa-expand"></i></span></a>
+												<a href="#" class="mry-more mry-magnetic-link mry-anima-link"><span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span></a>
+											</div>
+										</div>
+										<div class="mry-item-descr mry-fo">
+											<h4 class="mry-mb-10"><a href="#">Golden Horizon</a></h4>
+											<!-- <div class="mry-text">With elements that symbolize dreams and sleep. Consider bentuk kasur create a whimsical and dream-like atmosphere.
+											</div> -->
+										</div>
+									</div>
+								</div>
+
+								<!-- Landscape 6 -->
+								<div class="mry-masonry-grid-item mry-masonry-grid-item-33 landscape">
+									<div class="mry-card-item">
+										<div class="mry-card-cover-frame mry-mb-20 mry-fo">
+											<div class="mry-badge">Landscape</div>
+											<img src="../img/light/projects/photography/Landscape/Harmony in Japan/1.webp" alt="project" >
+											<div class="mry-cover-overlay"></div>
+											<div class="mry-hover-links">
+												<a href="../img/light/projects/photography/Landscape/Harmony in Japan/1.webp" data-fancybox="works" class="mry-zoom mry-magnetic-link"><span class="mry-magnetic-object"><i
+															class="fas fa-expand"></i></span></a>
+												<a href="#" class="mry-more mry-magnetic-link mry-anima-link"><span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span></a>
+											</div>
+										</div>
+										<div class="mry-item-descr mry-fo">
+											<h4 class="mry-mb-10"><a href="#">Harmony in Japan</a></h4>
+											<!-- <div class="mry-text">With elements that symbolize dreams and sleep. Consider bentuk kasur create a whimsical and dream-like atmosphere.
+											</div> -->
+										</div>
+									</div>
+								</div>
+
+								<!-- Landscape 7 -->
+								<div class="mry-masonry-grid-item mry-masonry-grid-item-33 landscape">
+									<div class="mry-card-item">
+										<div class="mry-card-cover-frame mry-mb-20 mry-fo">
+											<div class="mry-badge">Landscape</div>
+											<img src="../img/light/projects/photography/Landscape/Island Bliss/1.webp" alt="project" >
+											<div class="mry-cover-overlay"></div>
+											<div class="mry-hover-links">
+												<a href="../img/light/projects/photography/Landscape/Island Bliss/1.webp" data-fancybox="works" class="mry-zoom mry-magnetic-link"><span class="mry-magnetic-object"><i
+															class="fas fa-expand"></i></span></a>
+												<a href="#" class="mry-more mry-magnetic-link mry-anima-link"><span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span></a>
+											</div>
+										</div>
+										<div class="mry-item-descr mry-fo">
+											<h4 class="mry-mb-10"><a href="#">Island Bliss</a></h4>
+											<!-- <div class="mry-text">With elements that symbolize dreams and sleep. Consider bentuk kasur create a whimsical and dream-like atmosphere.
+											</div> -->
+										</div>
+									</div>
+								</div>
+
+								<!-- Landscape 8 -->
+								<div class="mry-masonry-grid-item mry-masonry-grid-item-33 landscape">
+									<div class="mry-card-item">
+										<div class="mry-card-cover-frame mry-mb-20 mry-fo">
+											<div class="mry-badge">Landscape</div>
+											<img src="../img/light/projects/photography/Landscape/Kaleidoscope of Korea/1.webp" alt="project" >
+											<div class="mry-cover-overlay"></div>
+											<div class="mry-hover-links">
+												<a href="../img/light/projects/photography/Landscape/Kaleidoscope of Korea/1.webp" data-fancybox="works" class="mry-zoom mry-magnetic-link"><span class="mry-magnetic-object"><i
+															class="fas fa-expand"></i></span></a>
+												<a href="#" class="mry-more mry-magnetic-link mry-anima-link"><span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span></a>
+											</div>
+										</div>
+										<div class="mry-item-descr mry-fo">
+											<h4 class="mry-mb-10"><a href="#">Kaleidoscope of Korea</a></h4>
+											<!-- <div class="mry-text">With elements that symbolize dreams and sleep. Consider bentuk kasur create a whimsical and dream-like atmosphere.
+											</div> -->
+										</div>
+									</div>
+								</div>
+
+								<!-- Landscape 9 -->
+								<div class="mry-masonry-grid-item mry-masonry-grid-item-33 landscape">
+									<div class="mry-card-item">
+										<div class="mry-card-cover-frame mry-mb-20 mry-fo">
+											<div class="mry-badge">Landscape</div>
+											<img src="../img/light/projects/photography/Landscape/Ocean_s Embrace/1.webp" alt="project" >
+											<div class="mry-cover-overlay"></div>
+											<div class="mry-hover-links">
+												<a href="../img/light/projects/photography/Landscape/Ocean_s Embrace/1.webp" data-fancybox="works" class="mry-zoom mry-magnetic-link"><span class="mry-magnetic-object"><i
+															class="fas fa-expand"></i></span></a>
+												<a href="#" class="mry-more mry-magnetic-link mry-anima-link"><span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span></a>
+											</div>
+										</div>
+										<div class="mry-item-descr mry-fo">
+											<h4 class="mry-mb-10"><a href="#">Ocean's Embrace</a><h4>
+											<!-- <div class="mry-text">With elements that symbolize dreams and sleep. Consider bentuk kasur create a whimsical and dream-like atmosphere.
+											</div> -->
+										</div>
+									</div>
+								</div>
+
+								<!-- Landscape 10 -->
+								<div class="mry-masonry-grid-item mry-masonry-grid-item-33 landscape">
+									<div class="mry-card-item">
+										<div class="mry-card-cover-frame mry-mb-20 mry-fo">
+											<div class="mry-badge">Landscape</div>
+											<img src="../img/light/projects/photography/Landscape/Oceanic/1.webp" alt="project" >
+											<div class="mry-cover-overlay"></div>
+											<div class="mry-hover-links">
+												<a href="../img/light/projects/photography/Landscape/Oceanic/1.webp" data-fancybox="works" class="mry-zoom mry-magnetic-link"><span class="mry-magnetic-object"><i
+															class="fas fa-expand"></i></span></a>
+												<a href="#" class="mry-more mry-magnetic-link mry-anima-link"><span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span></a>
+											</div>
+										</div>
+										<div class="mry-item-descr mry-fo">
+											<h4 class="mry-mb-10"><a href="#">Oceanic</a><h4>
+											<!-- <div class="mry-text">With elements that symbolize dreams and sleep. Consider bentuk kasur create a whimsical and dream-like atmosphere.
+											</div> -->
+										</div>
+									</div>
+								</div>
+
+								<!-- Landscape 11 -->
+								<div class="mry-masonry-grid-item mry-masonry-grid-item-33 landscape">
+									<div class="mry-card-item">
+										<div class="mry-card-cover-frame mry-mb-20 mry-fo">
+											<div class="mry-badge">Landscape</div>
+											<img src="../img/light/projects/photography/Landscape/Pangandaran Paradise/1.webp" alt="project" >
+											<div class="mry-cover-overlay"></div>
+											<div class="mry-hover-links">
+												<a href="../img/light/projects/photography/Landscape/Pangandaran Paradise/1.webp" data-fancybox="works" class="mry-zoom mry-magnetic-link"><span class="mry-magnetic-object"><i
+															class="fas fa-expand"></i></span></a>
+												<a href="#" class="mry-more mry-magnetic-link mry-anima-link"><span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span></a>
+											</div>
+										</div>
+										<div class="mry-item-descr mry-fo">
+											<h4 class="mry-mb-10"><a href="#">Pangandaran Paradise</a><h4>
+											<!-- <div class="mry-text">With elements that symbolize dreams and sleep. Consider bentuk kasur create a whimsical and dream-like atmosphere.
+											</div> -->
+										</div>
+									</div>
+								</div>
+
+								<!-- Landscape 12 -->
+								<div class="mry-masonry-grid-item mry-masonry-grid-item-33 landscape">
+									<div class="mry-card-item">
+										<div class="mry-card-cover-frame mry-mb-20 mry-fo">
+											<div class="mry-badge">Landscape</div>
+											<img src="../img/light/projects/photography/Landscape/Vibrant Night Market/1.webp" alt="project" >
+											<div class="mry-cover-overlay"></div>
+											<div class="mry-hover-links">
+												<a href="../img/light/projects/photography/Landscape/Vibrant Night Market/1.webp" data-fancybox="works" class="mry-zoom mry-magnetic-link"><span class="mry-magnetic-object"><i
+															class="fas fa-expand"></i></span></a>
+												<a href="#" class="mry-more mry-magnetic-link mry-anima-link"><span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span></a>
+											</div>
+										</div>
+										<div class="mry-item-descr mry-fo">
+											<h4 class="mry-mb-10"><a href="#">Vibrant Night Market</a><h4>
+											<!-- <div class="mry-text">With elements that symbolize dreams and sleep. Consider bentuk kasur create a whimsical and dream-like atmosphere.
+											</div> -->
+										</div>
+									</div>
+								</div>
+
+								<!-- Landscape 13 -->
+								<div class="mry-masonry-grid-item mry-masonry-grid-item-33 landscape">
+									<div class="mry-card-item">
+										<div class="mry-card-cover-frame mry-mb-20 mry-fo">
+											<div class="mry-badge">Landscape</div>
+											<img src="../img/light/projects/photography/Landscape/Whimsical Wonderland/1.webp" alt="project" >
+											<div class="mry-cover-overlay"></div>
+											<div class="mry-hover-links">
+												<a href="../img/light/projects/photography/Landscape/Whimsical Wonderland/1.webp" data-fancybox="works" class="mry-zoom mry-magnetic-link"><span class="mry-magnetic-object"><i
+															class="fas fa-expand"></i></span></a>
+												<a href="#" class="mry-more mry-magnetic-link mry-anima-link"><span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span></a>
+											</div>
+										</div>
+										<div class="mry-item-descr mry-fo">
+											<h4 class="mry-mb-10"><a href="#">Whimsical Wonderland</a><h4>
+											<!-- <div class="mry-text">With elements that symbolize dreams and sleep. Consider bentuk kasur create a whimsical and dream-like atmosphere.
+											</div> -->
+										</div>
+									</div>
+								</div>
+
+								<!-- Prewed 1 -->
+								<div class="mry-masonry-grid-item mry-masonry-grid-item-33 event">
+									<div class="mry-card-item">
+										<div class="mry-card-cover-frame mry-mb-20 mry-fo">
+											<div class="mry-badge">Prewedding</div>
+											<img src="../img/light/projects/photography/Event/Prewedding/Dates Day/1.webp" alt="project" >
+											<div class="mry-cover-overlay"></div>
+											<div class="mry-hover-links">
+												<a href="../img/light/projects/photography/Event/Prewedding/Dates Day/1.webp" data-fancybox="works" class="mry-zoom mry-magnetic-link"><span class="mry-magnetic-object"><i
+															class="fas fa-expand"></i></span></a>
+												<a href="#" class="mry-more mry-magnetic-link mry-anima-link"><span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span></a>
+											</div>
+										</div>
+										<div class="mry-item-descr mry-fo">
+											<h4 class="mry-mb-10"><a href="#">Dates Day</a><h4>
+											<!-- <div class="mry-text">With elements that symbolize dreams and sleep. Consider bentuk kasur create a whimsical and dream-like atmosphere.
+											</div> -->
+										</div>
+									</div>
+								</div>
+
+								<!-- Prewed 2 -->
+								<div class="mry-masonry-grid-item mry-masonry-grid-item-33 event">
+									<div class="mry-card-item">
+										<div class="mry-card-cover-frame mry-mb-20 mry-fo">
+											<div class="mry-badge">Prewedding</div>
+											<img src="../img/light/projects/photography/Event/Prewedding/Epilogue/1.webp" alt="project" >
+											<div class="mry-cover-overlay"></div>
+											<div class="mry-hover-links">
+												<a href="../img/light/projects/photography/Event/Prewedding/Epilogue/1.webp" data-fancybox="works" class="mry-zoom mry-magnetic-link"><span class="mry-magnetic-object"><i
+															class="fas fa-expand"></i></span></a>
+												<a href="#" class="mry-more mry-magnetic-link mry-anima-link"><span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span></a>
+											</div>
+										</div>
+										<div class="mry-item-descr mry-fo">
+											<h4 class="mry-mb-10"><a href="#">Epilogue</a><h4>
+											<!-- <div class="mry-text">With elements that symbolize dreams and sleep. Consider bentuk kasur create a whimsical and dream-like atmosphere.
+											</div> -->
+										</div>
+									</div>
+								</div>
+
+								<!-- Prewed 3 -->
+								<div class="mry-masonry-grid-item mry-masonry-grid-item-33 event">
+									<div class="mry-card-item">
+										<div class="mry-card-cover-frame mry-mb-20 mry-fo">
+											<div class="mry-badge">Prewedding</div>
+											<img src="../img/light/projects/photography/Event/Prewedding/Fairy Tale/1.webp" alt="project" >
+											<div class="mry-cover-overlay"></div>
+											<div class="mry-hover-links">
+												<a href="../img/light/projects/photography/Event/Prewedding/Fairy Tale/1.webp" data-fancybox="works" class="mry-zoom mry-magnetic-link"><span class="mry-magnetic-object"><i
+															class="fas fa-expand"></i></span></a>
+												<a href="#" class="mry-more mry-magnetic-link mry-anima-link"><span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span></a>
+											</div>
+										</div>
+										<div class="mry-item-descr mry-fo">
+											<h4 class="mry-mb-10"><a href="#">Fairy Tale</a><h4>
+											<!-- <div class="mry-text">With elements that symbolize dreams and sleep. Consider bentuk kasur create a whimsical and dream-like atmosphere.
+											</div> -->
+										</div>
+									</div>
+								</div>
+
+								<!-- Prewed 4 -->
+								<div class="mry-masonry-grid-item mry-masonry-grid-item-33 event">
+									<div class="mry-card-item">
+										<div class="mry-card-cover-frame mry-mb-20 mry-fo">
+											<div class="mry-badge">Prewedding</div>
+											<img src="../img/light/projects/photography/Event/Prewedding/First Time/1.webp" alt="project" >
+											<div class="mry-cover-overlay"></div>
+											<div class="mry-hover-links">
+												<a href="../img/light/projects/photography/Event/Prewedding/First Time/1.webp" data-fancybox="works" class="mry-zoom mry-magnetic-link"><span class="mry-magnetic-object"><i
+															class="fas fa-expand"></i></span></a>
+												<a href="#" class="mry-more mry-magnetic-link mry-anima-link"><span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span></a>
+											</div>
+										</div>
+										<div class="mry-item-descr mry-fo">
+											<h4 class="mry-mb-10"><a href="#">First Time</a><h4>
+											<!-- <div class="mry-text">With elements that symbolize dreams and sleep. Consider bentuk kasur create a whimsical and dream-like atmosphere.
+											</div> -->
+										</div>
+									</div>
+								</div>
+
+								<!-- Prewed 5 -->
+								<div class="mry-masonry-grid-item mry-masonry-grid-item-33 event">
+									<div class="mry-card-item">
+										<div class="mry-card-cover-frame mry-mb-20 mry-fo">
+											<div class="mry-badge">Prewedding</div>
+											<img src="../img/light/projects/photography/Event/Prewedding/In Your Reflection/1.webp" alt="project" >
+											<div class="mry-cover-overlay"></div>
+											<div class="mry-hover-links">
+												<a href="../img/light/projects/photography/Event/Prewedding/In Your Reflection/1.webp" data-fancybox="works" class="mry-zoom mry-magnetic-link"><span class="mry-magnetic-object"><i
+															class="fas fa-expand"></i></span></a>
+												<a href="#" class="mry-more mry-magnetic-link mry-anima-link"><span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span></a>
+											</div>
+										</div>
+										<div class="mry-item-descr mry-fo">
+											<h4 class="mry-mb-10"><a href="#">In Your Reflection</a><h4>
+											<!-- <div class="mry-text">With elements that symbolize dreams and sleep. Consider bentuk kasur create a whimsical and dream-like atmosphere.
+											</div> -->
+										</div>
+									</div>
+								</div>
+
+								<!-- Prewed 6 -->
+								<div class="mry-masonry-grid-item mry-masonry-grid-item-33 event">
+									<div class="mry-card-item">
+										<div class="mry-card-cover-frame mry-mb-20 mry-fo">
+											<div class="mry-badge">Prewedding</div>
+											<img src="../img/light/projects/photography/Event/Prewedding/Vintage Style/1.webp" alt="project" >
+											<div class="mry-cover-overlay"></div>
+											<div class="mry-hover-links">
+												<a href="../img/light/projects/photography/Event/Prewedding/Vintage Style/1.webp" data-fancybox="works" class="mry-zoom mry-magnetic-link"><span class="mry-magnetic-object"><i
+															class="fas fa-expand"></i></span></a>
+												<a href="#" class="mry-more mry-magnetic-link mry-anima-link"><span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span></a>
+											</div>
+										</div>
+										<div class="mry-item-descr mry-fo">
+											<h4 class="mry-mb-10"><a href="#">Vintage Style</a><h4>
+											<!-- <div class="mry-text">With elements that symbolize dreams and sleep. Consider bentuk kasur create a whimsical and dream-like atmosphere.
+											</div> -->
+										</div>
+									</div>
+								</div>
+
+								<!-- Potrait 1 -->
+								<!-- <div class="mry-masonry-grid-item mry-masonry-grid-item-33 potrait">
+									<div class="mry-card-item">
+										<div class="mry-card-cover-frame mry-mb-20 mry-fo">
+											<div class="mry-badge">Potrait</div>
+											<img src="../img/light/projects/photography/Potrait/Afternoon Forest/1.webp" alt="project" >
+											<div class="mry-cover-overlay"></div>
+											<div class="mry-hover-links">
+												<a href="../img/light/projects/photography/Potrait/Afternoon Forest/1.webp" data-fancybox="works" class="mry-zoom mry-magnetic-link"><span class="mry-magnetic-object"><i
+															class="fas fa-expand"></i></span></a>
+												<a href="#" class="mry-more mry-magnetic-link mry-anima-link"><span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span></a>
+											</div>
+										</div>
+										<div class="mry-item-descr mry-fo">
+											<h4 class="mry-mb-10"><a href="#">Afternoon Forest</a><h4>
+										</div>
+									</div>
+								</div> -->
+
+								<!-- Potrait 2 -->
+								<div class="mry-masonry-grid-item mry-masonry-grid-item-33 potrait">
+									<div class="mry-card-item">
+										<div class="mry-card-cover-frame mry-mb-20 mry-fo">
+											<div class="mry-badge">Potrait</div>
+											<img src="../img/light/projects/photography/Potrait/Forgiving Grace/1.webp" alt="project" >
+											<div class="mry-cover-overlay"></div>
+											<div class="mry-hover-links">
+												<a href="../img/light/projects/photography/Potrait/Forgiving Grace/1.webp" data-fancybox="works" class="mry-zoom mry-magnetic-link"><span class="mry-magnetic-object"><i
+															class="fas fa-expand"></i></span></a>
+												<a href="#" class="mry-more mry-magnetic-link mry-anima-link"><span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span></a>
+											</div>
+										</div>
+										<div class="mry-item-descr mry-fo">
+											<h4 class="mry-mb-10"><a href="#">Authentic Radiance</a><h4>
+											<!-- <div class="mry-text">With elements that symbolize dreams and sleep. Consider bentuk kasur create a whimsical and dream-like atmosphere.
+											</div> -->
+										</div>
+									</div>
+								</div>
+
+								<!-- Potrait 3 -->
+								<div class="mry-masonry-grid-item mry-masonry-grid-item-33 potrait">
+									<div class="mry-card-item">
+										<div class="mry-card-cover-frame mry-mb-20 mry-fo">
+											<div class="mry-badge">Potrait</div>
+											<img src="../img/light/projects/photography/Potrait/Girl in spring/1.webp" alt="project" >
+											<div class="mry-cover-overlay"></div>
+											<div class="mry-hover-links">
+												<a href="../img/light/projects/photography/Potrait/Girl in spring/1.webp" data-fancybox="works" class="mry-zoom mry-magnetic-link"><span class="mry-magnetic-object"><i
+															class="fas fa-expand"></i></span></a>
+												<a href="#" class="mry-more mry-magnetic-link mry-anima-link"><span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span></a>
+											</div>
+										</div>
+										<div class="mry-item-descr mry-fo">
+											<h4 class="mry-mb-10"><a href="#">Girl in spring</a><h4>
+											<!-- <div class="mry-text">With elements that symbolize dreams and sleep. Consider bentuk kasur create a whimsical and dream-like atmosphere.
+											</div> -->
+										</div>
+									</div>
+								</div>
+
+								<!-- Potrait 4 -->
+								<div class="mry-masonry-grid-item mry-masonry-grid-item-33 potrait">
+									<div class="mry-card-item">
+										<div class="mry-card-cover-frame mry-mb-20 mry-fo">
+											<div class="mry-badge">Potrait</div>
+											<img src="../img/light/projects/photography/Potrait/Silent Sorrow/1.webp" alt="project" >
+											<div class="mry-cover-overlay"></div>
+											<div class="mry-hover-links">
+												<a href="../img/light/projects/photography/Potrait/Silent Sorrow/1.webp" data-fancybox="works" class="mry-zoom mry-magnetic-link"><span class="mry-magnetic-object"><i
+															class="fas fa-expand"></i></span></a>
+												<a href="#" class="mry-more mry-magnetic-link mry-anima-link"><span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span></a>
+											</div>
+										</div>
+										<div class="mry-item-descr mry-fo">
+											<h4 class="mry-mb-10"><a href="#">Silent Sorrow</a><h4>
+											<!-- <div class="mry-text">With elements that symbolize dreams and sleep. Consider bentuk kasur create a whimsical and dream-like atmosphere.
+											</div> -->
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- portfolio end -->
+
+				<!-- footer -->
+				<footer class="mry-footer">
+					<div class="container">
+						<div class="mry-main-title mry-title-center mry-p-0-100">
+							<div class="mry-subtitle mry-mb-20 mry-fo">Call to action</div>
+							<h2 class="mry-h1 mry-mb-20 mry-fo">Do you have <span class="mry-border-text">a project?</span></h2>
+							<div class="mry-text mry-mb-30  mry-fo">I'm always ready to assist you with any project you have in mind, just let me know how I can help!</div>
+							<div class="mry-fo">
+								<a href="contact.html" class="mry-anima-link mry-btn mry-btn-color mry-default-link">Let's discuss</a>
+<!-- <a href="portfolio-grid-1.html" class="mry-anima-link  mry-btn-text mry-default-link">Portfolio</a> -->							</div>
+						</div>
+					</div>
+					<div class="mry-footer-copy">
+						<div class="container">
+							<div>Padagraph ©  2023</div>
+							<ul class="mry-social">
+								<li><a href="#."><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="#."><i class="fab fa-instagram"></i></a></li>
+							</ul>
+							<!-- <div>By: <a href="https://themeforest.net/user/ultimatewebsolutions/" class="mry-default-link" target="_blank">UWS</a></div> -->
+						</div>
+					</div>
+				</footer>
+				<!-- footer end -->
+
+				<div class="mry-head-bg mry-head-bottom">
+					<img src="img/light/projects/prjct-2/1.jpg" alt="background">
+					<div class="mry-bg-overlay"></div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<!-- jquery js -->
+	<script src="../js/plugins/jquery.min.js"></script>
+	<!-- tween max js -->
+	<script src="../js/plugins/tween-max.min.js"></script>
+	<!-- scroll magic js -->
+	<script src="../js/plugins/scroll-magic.js"></script>
+	<!-- scroll magic gsap plugin js -->
+	<script src="../js/plugins/scroll-magic-gsap-plugin.js"></script>
+	<!-- swiper js -->
+	<script src="../js/plugins/swiper.min.js"></script>
+	<!-- isotope js -->
+	<script src="../js/plugins/isotope.min.js"></script>
+	<!-- fancybox js -->
+	<script src="../js/plugins/fancybox.min.js"></script>	
+	<!-- mapbox js -->
+	<script src="../js/plugins/mapbox.min.js"></script>
+	<!-- smooth scrollbar js -->
+	<script src="../js/plugins/smooth-scrollbar.min.js"></script>
+	<!-- overscroll js -->
+	<script src="../js/plugins/overscroll.min.js"></script>
+	<!-- canvas js -->
+	<script src="../js/plugins/canvas.js"></script>
+	<!-- parsley js -->
+	<script src="../js/plugins/parsley.min.js"></script>
+	<!-- main js -->
+	<script src="../js/main.js"></script>
+
+</body>
+
+</html>
