@@ -1345,7 +1345,7 @@ html.is-animating .transition-fade .mry-loading-curtain {
 /* Video */
 
 .mry-about-video .mry-video-cover-frame {
-	position: relative;
+	/* position: relative; */
 	overflow: hidden;
 	/* padding-bottom: 60%; */
 	width: 75vw;
