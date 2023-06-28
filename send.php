@@ -92,7 +92,7 @@ if ($_POST['phone'] != '') {
 	$_POST['phone'] = filter_var($_POST['phone'], FILTER_VALIDATE_REGEXP, $pattern_phone);
 	
 	if($_POST['phone'] == '') {
-		$errors .= 'Please enter a valid phone number like: +363012345<br/>';
+		$errors .= 'Please enter a valid phone number like: +623012345<br/>';
 	}
 }
 
